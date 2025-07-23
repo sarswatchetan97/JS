@@ -25,3 +25,19 @@ async function fetchUserData() {
     }
 }
 fetchUserData();
+
+//Implement another scenario using JSON placeholder
+
+async function fetchComments() {
+    console.log('Fetching Data');
+    try {
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+        const data = await res.json();
+        console.log('Title: ', data.title,'\n','Body: ', data.body);
+    } catch(error) {
+        console.log('Error Fetching Data', error);
+    } finally {
+        console.log('Thank you!!');
+    }
+}
+fetchComments();
