@@ -9,7 +9,10 @@
 
 // console.log(result);
 
-import { add, multiply } from './lecture24.js'
+import { add as plus, multiply } from './lecture24.js'
+import greet from './lecture25.js';
 
-console.log(add(2,3));
+console.log(plus(2,3));
 console.log(multiply(5,6));
+
+greet('Chetan');
