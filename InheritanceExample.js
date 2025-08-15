@@ -61,7 +61,7 @@ class C extends B {
     }
 }
 
-const obj = new C();
-obj.sayA();
-obj.sayB();
-obj.sayC();
+const obj1 = new C();
+obj1.sayA();
+obj1.sayB();
+obj1.sayC();
